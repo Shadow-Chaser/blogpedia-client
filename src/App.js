@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './components/Home/Home';
-import Navigator from './components/Navigator/Navigator';
+import Home from './components/HomePage/Home/Home';
+import Navigator from './components/Shared/Navigator/Navigator';
 import Login from './components/Login/Login'
 import {
   BrowserRouter as Router,
@@ -9,7 +9,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Admin from './components/Admin/Admin';
+import Admin from './components/AdminPanel/Admin/Admin';
+import AddBlog from './components/AdminPanel/AddBlog/AddBlog';
 
 function App() {
   return (
@@ -25,6 +26,14 @@ function App() {
         <Route path="/login">
           <Login></Login>
         </Route>
+        <Route path="/addBlog">
+          <AddBlog></AddBlog>
+        </Route>
+
+        <Route path="/">
+
+        </Route>
+
         <Route exact path="/">
           <Home></Home>
         </Route>

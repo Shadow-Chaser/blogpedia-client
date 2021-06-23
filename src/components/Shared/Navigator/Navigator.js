@@ -24,12 +24,12 @@ import React from 'react';
 import { Button, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Navigator.css'
-import logo from '../../assets/logo.png'
+import logo from '../../../assets/logo.png'
 
 const Navigator = () => {
     return (
         <Navbar bg='' className='navbar-container' expand="lg">
-            <Navbar.Brand className='ml-5'><img src={logo} style={{ width: '120px' }} alt="" srcset="" /></Navbar.Brand>
+            <Navbar.Brand className='ml-5'><img src={logo} style={{ width: '140px' }} alt="" srcset="" /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto mr-5">
