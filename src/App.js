@@ -11,11 +11,12 @@ import {
 } from "react-router-dom";
 import Admin from './components/AdminPanel/Admin/Admin';
 import AddBlog from './components/AdminPanel/AddBlog/AddBlog';
+import ManageBlogs from './components/AdminPanel/ManageBlogs/ManageBlogs'
 
 function App() {
   return (
     <Router>
-      <Navigator></Navigator>
+      {/* <Navigator></Navigator> */}
       <Switch>
         <Route path="/home">
           <Home></Home>
@@ -28,6 +29,9 @@ function App() {
         </Route>
         <Route path="/addBlog">
           <AddBlog></AddBlog>
+        </Route>
+        <Route path="/manageBlogs">
+          <ManageBlogs></ManageBlogs>
         </Route>
 
         <Route path="/">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-// import Sidebar from '../Sidebar/Sidebar';
+import Sidebar from '../../Shared/Sidebar/Sidebar';
 
 const AddBlog = () => {
     const [blogData, setBlogData] = useState({})
@@ -48,7 +48,7 @@ const AddBlog = () => {
     return (
         <div className="container-fluid row">
             <div className="col-md-2">
-                {/* <Sidebar></Sidebar> */}
+                <Sidebar></Sidebar>
             </div>
 
             <div className="col-md-10">

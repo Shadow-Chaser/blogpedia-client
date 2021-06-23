@@ -1,9 +1,10 @@
 import React from 'react';
+import AddBlog from '../AddBlog/AddBlog';
 
 const Admin = () => {
     return (
-        <div>
-            <p>Admin</p>
+        <div className="container-fluid ">
+            <AddBlog></AddBlog>
         </div>
     );
 };
