@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Row, Table } from 'react-bootstrap';
 import Sidebar from '../../Shared/Sidebar/Sidebar';
 import { FcFullTrash } from 'react-icons/fc'
+import './ManageBlogs.css'
+
 const ManageServices = () => {
     const [blogsData, setBlogsData] = useState([]);
 
@@ -50,7 +52,7 @@ const ManageServices = () => {
                             blogsData.map(blog =>
                                 <tr>
                                     <td>{blog.title}</td>
-                                    <td><FcFullTrash onClick={() => handleDelete(blog._id)} /></td>
+                                    <td><FcFullTrash onClick={() => handleDelete(blog._id)} /> </td>
                                 </tr>
                             )
                         }

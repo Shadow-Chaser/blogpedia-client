@@ -17,6 +17,9 @@ function App() {
   return (
     <Router>
       {/* <Navigator></Navigator> */}
+      <Route exact path="/">
+        <Home></Home>
+      </Route>
       <Switch>
         <Route path="/home">
           <Home></Home>
@@ -38,9 +41,6 @@ function App() {
 
         </Route>
 
-        <Route exact path="/">
-          <Home></Home>
-        </Route>
       </Switch>
     </Router>
   );

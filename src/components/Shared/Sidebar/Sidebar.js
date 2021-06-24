@@ -27,7 +27,7 @@ const Sidebar = () => {
 
 
 
-                <Link to="/" className="text-white"><GoSignOut /><span>Logout</span></Link>
+                <Link style={{ textDecoration: 'none' }} className="text-white"><GoSignOut /><span>Logout</span></Link>
             </ul>
 
         </div>
