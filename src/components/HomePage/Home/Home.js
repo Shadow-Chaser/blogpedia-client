@@ -6,7 +6,7 @@ import './Home.css'
 const Home = () => {
     return (
         <div >
-            {/* <Navigator></Navigator> */}
+            <Navigator></Navigator>
             <Header></Header>
         </div>
     );

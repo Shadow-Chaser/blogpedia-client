@@ -1,25 +1,3 @@
-// import React from 'react';
-// import { Nav, Navbar } from 'react-bootstrap';
-
-// const Navigator = () => {
-//     return (
-//         <Navbar bg="" expand="lg">
-//             <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-//             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-//             <Navbar.Collapse id="basic-navbar-nav">
-//                 <Nav className="mr-right">
-//                     <Nav.Link href="#home">Home</Nav.Link>
-//                     <Nav.Link href="#link">Link</Nav.Link>
-//                 </Nav>
-
-//             </Navbar.Collapse>
-//         </Navbar>
-//     );
-// };
-
-// export default Navigator;
-
-
 import React from 'react';
 import { Button, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';

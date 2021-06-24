@@ -15,7 +15,8 @@ import ManageBlogs from './components/AdminPanel/ManageBlogs/ManageBlogs'
 
 function App() {
   return (
-    <Router>
+    <div className='App'>
+      <Router >
       {/* <Navigator></Navigator> */}
       <Route exact path="/">
         <Home></Home>
@@ -43,6 +44,8 @@ function App() {
 
       </Switch>
     </Router>
+    </div>
+
   );
 }
 

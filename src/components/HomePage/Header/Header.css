@@ -1,4 +1,4 @@
-#headerImg{
+/* #headerImg{
     width: 100%;
     position: absolute;
     top: 0px;
@@ -9,14 +9,21 @@
     position: relative;
     z-index: 1;
 }
+ */
 
-/* .header-div{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.288),rgba(0, 0, 0, 0.37), url('../../../assets/headerImg.jpg'));
-    background-size: cover;
-    height: 100vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: relative;
+.header-img{
+    width: 400px;
+    margin-left: 100px;
+}
 
-    
-} */
+.header-text{
+    font-size: 70px;
+    font-weight: 700;
+    color: #60b0f4;
+
+    margin: 0;
+  position: absolute;
+  top: 25%;
+  /* -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
+}
