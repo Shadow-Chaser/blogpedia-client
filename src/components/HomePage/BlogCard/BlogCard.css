@@ -21,3 +21,14 @@
 
 
 }
+
+@media(max-width:668px){
+    .card{
+        margin: 20px;
+        width: 300px;
+    }
+    .card-img{
+        width: 300px;
+        height: 200px;
+    }
+}

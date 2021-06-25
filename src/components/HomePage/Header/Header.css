@@ -1,19 +1,10 @@
-/* #headerImg{
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    z-index: -1;
-}
 
-#nav-div{
-    position: relative;
-    z-index: 1;
-}
- */
 
 .header-img{
     width: 400px;
     margin-left: 100px;
+    margin-right: 60px;
+    
 }
 
 .header-text{
@@ -26,4 +17,23 @@
   top: 25%;
   /* -ms-transform: translateY(-50%);
   transform: translateY(-50%); */
+}
+
+@media(max-width:668px){
+    .header-img{
+        width: 100px;
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+    .header-text{
+        font-size: 20px;
+        font-weight: 800;
+        color: #60b0f4;
+    
+        margin: 0;
+      position: absolute;
+      top: 25%;
+    }
+
+    
 }
