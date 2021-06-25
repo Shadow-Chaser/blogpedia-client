@@ -1,0 +1,23 @@
+.card-img{
+    width: 400px;
+    height: 200px;
+}
+
+.card{
+    margin: 20px;
+    width: 400px;
+}
+
+.card-title{
+    font-size: 20px;
+    margin:15px 0px 7px 10px;
+    font-weight: 700;
+    /* word-wrap: break-word; */
+}
+
+.card-text{
+    /* word-wrap: break-word; */
+    margin:7px 0px 15px 10px;
+
+
+}

@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { BLogContext } from '../../../App';
+import BlogCard from '../BlogCard/BlogCard';
 
 
 const BlogContainer = () => {
@@ -14,8 +15,10 @@ const BlogContainer = () => {
     console.log(blogsData);
 
     return (
-        <div>
-
+        <div className='row d-flex justify-content-center mt-5'>
+            {
+                blogsData.map(blog => <BlogCard blog={blog} ></BlogCard>)
+            }
         </div>
     );
 };

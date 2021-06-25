@@ -56,7 +56,7 @@ const ManageServices = () => {
                             blogsData.map(blog =>
                                 <tr>
                                     <td>{blog.title}</td>
-                                    <td><FcFullTrash onClick={() => handleDelete(blog._id)} /> </td>
+                                    <td><FcFullTrash onClick={() => handleDelete(blog._id)} style={{ cursor: 'pointer' }} /> </td>
                                 </tr>
                             )
                         }
