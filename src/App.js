@@ -17,12 +17,16 @@ import PrivateRoute from './components/Auth/PrivateRoute/PrivateRoute';
 
 
 export const UserContext = createContext();
+export const BLogContext = createContext();
+
 
 function App() {
   const [signedInUser, setSignedInUser] = useState({});
+  const [blogsData, setBlogsData] = useState([]);
 
   return (
     <UserContext.Provider value={[signedInUser, setSignedInUser]}>
+      <BLogContext.Provider value={[blogsData, setBlogsData]}>
     <div className='App'>
         <Router >
 
@@ -44,15 +48,13 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/manageBlogs">
               <ManageBlogs></ManageBlogs>
-            </PrivateRoute>
-
-            <Route path="/">
-
-            </Route>
-
+              </PrivateRoute>
+              <Route path="/">
+              </Route>
           </Switch>
     </Router>
     </div>
+      </BLogContext.Provider>
     </UserContext.Provider>
 
 

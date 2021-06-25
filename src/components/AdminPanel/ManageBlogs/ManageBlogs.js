@@ -1,21 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Row, Table } from 'react-bootstrap';
 import Sidebar from '../../Shared/Sidebar/Sidebar';
 import { FcFullTrash } from 'react-icons/fc'
 import './ManageBlogs.css'
+import { BLogContext } from '../../../App';
 
 const ManageServices = () => {
-    const [blogsData, setBlogsData] = useState([]);
+    // const [blogsData, setBlogsData] = useState([]);
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        fetch('http://localhost:8080/blogs')
-            .then(res => res.json())
-            .then(data => {
-                setBlogsData(data);
-            })
+    //     fetch('http://localhost:8080/blogs')
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             setBlogsData(data);
+    //         })
 
-    }, [])
+    // }, [])
+
+    const [blogsData, setBlogsData] = useContext(BLogContext);
+
 
     const handleDelete = (id) => {
         console.log(id);
