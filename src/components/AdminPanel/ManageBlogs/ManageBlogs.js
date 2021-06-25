@@ -3,7 +3,7 @@ import { Row, Table } from 'react-bootstrap';
 import Sidebar from '../../Shared/Sidebar/Sidebar';
 import { FcFullTrash } from 'react-icons/fc'
 import './ManageBlogs.css'
-import { BLogContext } from '../../../App';
+import { BlogContext } from '../../../App';
 
 const ManageServices = () => {
     // const [blogsData, setBlogsData] = useState([]);
@@ -18,7 +18,7 @@ const ManageServices = () => {
 
     // }, [])
 
-    const [blogsData, setBlogsData] = useContext(BLogContext);
+    const [blogsData, setBlogsData] = useContext(BlogContext);
 
 
     const handleDelete = (id) => {

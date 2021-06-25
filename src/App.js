@@ -14,10 +14,10 @@ import Admin from './components/AdminPanel/Admin/Admin';
 import AddBlog from './components/AdminPanel/AddBlog/AddBlog';
 import ManageBlogs from './components/AdminPanel/ManageBlogs/ManageBlogs'
 import PrivateRoute from './components/Auth/PrivateRoute/PrivateRoute';
-
+import BlogDetails from './components/HomePage/BlogDetails/BlogDetails'
 
 export const UserContext = createContext();
-export const BLogContext = createContext();
+export const BlogContext = createContext();
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
 
   return (
     <UserContext.Provider value={[signedInUser, setSignedInUser]}>
-      <BLogContext.Provider value={[blogsData, setBlogsData]}>
+      <BlogContext.Provider value={[blogsData, setBlogsData]}>
     <div className='App'>
         <Router >
 
@@ -49,12 +49,13 @@ function App() {
             <PrivateRoute path="/manageBlogs">
               <ManageBlogs></ManageBlogs>
               </PrivateRoute>
-              <Route path="/">
+              <Route path="/blog/:blogId">
+                <BlogDetails></BlogDetails>
               </Route>
           </Switch>
     </Router>
     </div>
-      </BLogContext.Provider>
+      </BlogContext.Provider>
     </UserContext.Provider>
 
 

@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { BLogContext } from '../../../App';
+import { BlogContext } from '../../../App';
 import BlogCard from '../BlogCard/BlogCard';
 
 
 const BlogContainer = () => {
 
-    const [blogsData, setBlogsData] = useContext(BLogContext)
+    const [blogsData, setBlogsData] = useContext(BlogContext)
 
     useEffect(() => {
         fetch('http://localhost:8080/blogs')
