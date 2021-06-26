@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Row, Table } from 'react-bootstrap';
 import Sidebar from '../../Shared/Sidebar/Sidebar';
-import { FcFullTrash } from 'react-icons/fc'
+import { BsFillTrashFill } from 'react-icons/bs'
 import './ManageBlogs.css'
 import { BlogContext } from '../../../App';
 
@@ -10,7 +10,7 @@ const ManageServices = () => {
 
     // useEffect(() => {
 
-    //     fetch('http://localhost:8080/blogs')
+    //     fetch('https://still-crag-23570.herokuapp.com/blogs')
     //         .then(res => res.json())
     //         .then(data => {
     //             setBlogsData(data);
@@ -23,7 +23,7 @@ const ManageServices = () => {
 
     const handleDelete = (id) => {
         console.log(id);
-        fetch(`http://localhost:8080/deleteBlog/${id}`, {
+        fetch(`https://still-crag-23570.herokuapp.com/deleteBlog/${id}`, {
             method: "DELETE"
         })
             .then(res => res.json())
@@ -47,16 +47,16 @@ const ManageServices = () => {
                 <Table striped bordered hover style={{ width: "80%", margin: '0 auto' }}>
                     <thead>
                         <tr>
-                            <th>Blog Title</th>
-                            <th>Action</th>
+                            <th className='text-center'>Blog Title</th>
+                            <th className='text-center'> Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         {
                             blogsData.map(blog =>
                                 <tr>
-                                    <td>{blog.title}</td>
-                                    <td><FcFullTrash onClick={() => handleDelete(blog._id)} style={{ cursor: 'pointer' }} /> </td>
+                                    <td className='text-center'>{blog.title}</td>
+                                    <td className='text-center'><BsFillTrashFill onClick={() => handleDelete(blog._id)} style={{ cursor: 'pointer', color: 'red' }} /> </td>
                                 </tr>
                             )
                         }

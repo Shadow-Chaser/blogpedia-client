@@ -24,7 +24,7 @@ const AddBlog = () => {
         formData.append('file', file);
         formData.append('title', blogData.title)
 
-        fetch('http://localhost:8080/addBlog', {
+        fetch('https://still-crag-23570.herokuapp.com/addBlog', {
             method: 'POST',
             body: formData
 

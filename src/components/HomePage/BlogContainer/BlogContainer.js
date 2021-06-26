@@ -8,7 +8,7 @@ const BlogContainer = () => {
     const [blogsData, setBlogsData] = useContext(BlogContext)
 
     useEffect(() => {
-        fetch('http://localhost:8080/blogs')
+        fetch('https://still-crag-23570.herokuapp.com/blogs')
             .then(res => res.json())
             .then(data => setBlogsData(data))
     }, [])
