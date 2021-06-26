@@ -54,7 +54,7 @@ const AddBlog = () => {
             <div className="col-md-10">
                 <div className='d-flex justify-content-center'>
                     <Form className='w-75 mt-5' onSubmit={handleSubmit}>
-                        <h1 className="mb-4 text-info">Add a new Blog</h1>
+                        <h1 className="mb-4 " style={{ color: '#83B799' }}>Add a new Blog</h1>
                         <Form.Group controlId="title">
                             <Form.Label>Blog Title</Form.Label>
                             <Form.Control onBlur={handleBlur} type="text" name='title' placeholder="Enter blog title" />
@@ -73,7 +73,7 @@ const AddBlog = () => {
                         </Form.Group>
 
                         <div className="d-flex justify-content-center">
-                            <Button className='' variant="primary" type="submit">Submit</Button>
+                            <Button style={{ backgroundColor: '#83B799', border: '0' }} variant="primary" type="submit">Publish</Button>
                         </div>
 
                     </Form>

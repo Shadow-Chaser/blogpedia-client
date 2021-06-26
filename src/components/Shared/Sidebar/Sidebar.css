@@ -1,5 +1,6 @@
 .sidebar{
-    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+    /* background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%); */
+    background-color: #83B799;
     
     position: fixed;
     left:0px
