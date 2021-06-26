@@ -1,5 +1,4 @@
 .sidebar{
-    /* background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%); */
     background-color: #83B799;
     
     position: fixed;
@@ -19,7 +18,7 @@
 
 @media(max-width:668px){ 
     .sidebar{
-        background-image: linear-gradient(40deg, #19d3ae,#0fcfec);
+        background-color: #83B799;
         position: relative;
         /* margin-left: 0px; */
     }

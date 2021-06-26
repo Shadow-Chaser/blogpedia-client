@@ -7,7 +7,7 @@ import './BlogDetails.css'
 const BlogDetails = () => {
     const [blogsData, setBlogsData] = useContext(BlogContext)
     const { blogId } = useParams();
-    const blog = blogsData.find(b => b._id === blogId);
+    const blog = blogsData.find(b => b._id === blogId) || {};
     // console.log(blog);
 
     return (

@@ -6,19 +6,19 @@ import './ManageBlogs.css'
 import { BlogContext } from '../../../App';
 
 const ManageServices = () => {
-    // const [blogsData, setBlogsData] = useState([]);
+    const [blogsData, setBlogsData] = useState([]);
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     fetch('https://still-crag-23570.herokuapp.com/blogs')
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             setBlogsData(data);
-    //         })
+        fetch('https://still-crag-23570.herokuapp.com/blogs')
+            .then(res => res.json())
+            .then(data => {
+                setBlogsData(data);
+            })
 
-    // }, [])
+    }, [])
 
-    const [blogsData, setBlogsData] = useContext(BlogContext);
+    // const [blogsData, setBlogsData] = useContext(BlogContext);
 
 
     const handleDelete = (id) => {
