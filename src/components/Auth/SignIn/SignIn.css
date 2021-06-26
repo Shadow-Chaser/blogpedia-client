@@ -8,3 +8,9 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
+.signin-text{
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bolder;
+}

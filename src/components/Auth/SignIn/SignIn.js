@@ -54,6 +54,7 @@ const SignIn = () => {
                 newUserInfo.error = error.message;
                 newUserInfo.success = false;
                 setUser(newUserInfo);
+                console.log(newUserInfo);
             });
         e.preventDefault();
     }
@@ -61,7 +62,7 @@ const SignIn = () => {
 
     return (
         <div>
-            <h1 className="text-center">SignIn to proceed</h1>
+            <h1 className="signin-text">Sign In to Proceed!</h1>
             <Form onSubmit={handleSubmit} className='form-container'>
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
@@ -73,7 +74,11 @@ const SignIn = () => {
                     <Form.Control type="password" name='password' placeholder="Password" onBlur={handleBlur} />
                 </Form.Group>
 
-                <Button variant="info" type="submit">Submit</Button>
+                <Button variant="info" type="submit">Sign In</Button>
+
+                {
+                    user.error && <p style={{ color: 'red', margin: '20px', fontWeight: 'bolder' }}>🚫 {user.error} </p>
+                }
             </Form>
         </div>
     );

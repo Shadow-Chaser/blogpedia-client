@@ -8,7 +8,7 @@ const timeStamp = 3500;
 
 const Header = () => {
     return (
-        <div className='mt-5'>
+        <div className='mt-3 header-area'>
 
             <Carousel fade={true} controls={false} indicators={false}>
                 <Carousel.Item interval={timeStamp}>
