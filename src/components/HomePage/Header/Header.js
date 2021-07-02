@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <div className='mt-3 header-area'>
 
-            <Carousel fade={true} controls={false} indicators={false}>
+            <Carousel fade={true} controls={false} indicators={false} pause={false}>
                 <Carousel.Item interval={timeStamp}>
                     <div className="d-flex">
                         <div className="">
